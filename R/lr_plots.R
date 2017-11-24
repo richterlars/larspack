@@ -26,9 +26,9 @@ lr_corplot <- function(data, x, y) {
 
   eqn <- paste0("R = ", r, "; ", p)
 
-  g <- ggplot2::ggplot(data, aes_string(x=x, y=y)) +
-    geom_point() +
-    geom_smooth(method = "lm") +
-    annotate("label", -Inf, Inf, label = eqn, hjust = -.1, vjust = 2)
+  g <- ggplot2::ggplot(data, ggplot2::aes_string(x=x, y=y)) +
+    ggplot2::geom_point() +
+    ggplot2::geom_smooth(method = "lm") +
+    ggplot2::annotate("label", -Inf, Inf, label = eqn, hjust = -.1, vjust = 2)
 
 }
