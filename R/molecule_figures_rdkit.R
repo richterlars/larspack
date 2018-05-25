@@ -17,6 +17,8 @@
 #' #draws molecule directly into plot pane
 #' draw_mol("C[C@@]1([C@H]2C[C@H]3[C@@H](C(=O)C(=C([C@]3(C(=O)C2=C(C4=C1C=CC=C4O)O)O)O)C(=O)N)N(C)C)O")
 #'
+#' in order to crop the white space around pictures ImageMagick can be used.
+#' the command in windows is >magick mogrify -trim *.png
 draw_mol <- function(smiles, filepath = NA, plot = TRUE, size = 600) {
 
   if (is.na(filepath)) {
