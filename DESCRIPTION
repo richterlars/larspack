@@ -1,6 +1,6 @@
 Package: larspack
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Collection of functions which are used repetetively
 Version: 0.1.0
 Authors@R: person("Lars", "Richter", email = "lars.richter.deu@gmail.com",
   role = c("aut", "cre"))
