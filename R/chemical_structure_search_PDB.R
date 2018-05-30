@@ -22,7 +22,7 @@ get_pdbFromMol <- function(smiles, exactSearch = FALSE, tanimoto_treshold = 0.9)
   if (exactSearch) {
     query <- stringr::str_c("http://www.rcsb.org/pdb/rest/smilesQuery?smiles=", smiles, "&search_type=exact")
   } else {
-    query <- stringr::str_c("http://www.rcsb.org/pdb/rest/smilesQuery?smiles=", smiles, "&search_type=similarity&similarity=", tc)
+    query <- stringr::str_c("http://www.rcsb.org/pdb/rest/smilesQuery?smiles=", smiles, "&search_type=similarity&similarity=", tanimoto_treshold)
   }
     content <- httr::GET(query) %>%
     httr::content()
