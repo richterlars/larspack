@@ -5,8 +5,8 @@
 #' @return character vector of PDB codes
 #'
 #' @examples
-#' > get_pdb_id("CC(=O)OC1=CC=CC=C1C(=O)O", 0.9)
-#' [1] "1OXR" "1TGM" "2QQT" "3FCQ" "3GCL" "3IAZ" "4NSB"
+#' get_pdb_id("CC(=O)OC1=CC=CC=C1C(=O)O", 0.9)
+#' "1OXR" "1TGM" "2QQT" "3FCQ" "3GCL" "3IAZ" "4NSB"
 #'
 #' @describeIn
 #' Utilizing PDB Web API to search PDB complexes with share similarity with input ligand

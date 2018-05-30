@@ -19,7 +19,9 @@ Imports:
   tibble,
   png,
   grid,
-  xml2
+  xml2,
+  httr,
+  stringr
 RoxygenNote: 6.0.1
 Suggests: 
     knitr,

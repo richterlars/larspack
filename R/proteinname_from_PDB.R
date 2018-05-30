@@ -5,8 +5,8 @@
 #' @return character vector of protein names
 #'
 #' @examples
-#' > get_pdb_proteinname("1TGM")
-#' [1] "Basic phospholipase A2 VRV-PL-VIIIa"
+#' get_pdb_proteinname("1TGM")
+#' "Basic phospholipase A2 VRV-PL-VIIIa"
 #'
 #' @describeIn
 #' Utilizing PDB Web API to search protein names of PDB

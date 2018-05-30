@@ -35,10 +35,10 @@ https://www.rcsb.org/pdb/software/rest.do#descEntity
 }}
 
 \examples{
-> get_pdb_id("CC(=O)OC1=CC=CC=C1C(=O)O", 0.9)
-[1] "1OXR" "1TGM" "2QQT" "3FCQ" "3GCL" "3IAZ" "4NSB"
+get_pdb_id("CC(=O)OC1=CC=CC=C1C(=O)O", 0.9)
+"1OXR" "1TGM" "2QQT" "3FCQ" "3GCL" "3IAZ" "4NSB"
 
-> get_pdb_proteinname("1TGM")
-[1] "Basic phospholipase A2 VRV-PL-VIIIa"
+get_pdb_proteinname("1TGM")
+"Basic phospholipase A2 VRV-PL-VIIIa"
 
 }
