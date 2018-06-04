@@ -26,7 +26,7 @@ get_PDB_proteinname <- function(pdb_ids){
     content <- httr::GET(query) %>%
       httr::content()
 
-    protein_names <- xml2::xml_find_all(query, "//macroMolecule") %>%
+    protein_names <- xml2::xml_find_all(content, "//macroMolecule") %>%
       xml2::xml_attr("name") %>%
       unique()
 
