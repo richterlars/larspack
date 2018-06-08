@@ -21,7 +21,9 @@ Imports:
   grid,
   xml2,
   httr,
-  stringr
+  stringr,
+  modelr,
+  reshape2
 RoxygenNote: 6.0.1
 Suggests: 
     knitr,
