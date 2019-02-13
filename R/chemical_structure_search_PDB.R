@@ -18,7 +18,7 @@
 #'
 #' @export
 
-get_pdbFromMol <- function(smiles, exactSearch = FALSE, tanimoto_treshold = 0.9){
+get_pdbFromMol <- function(smiles, tanimoto_treshold = 0.9, exactSearch = FALSE){
   smiles <- smiles %>%
     urltools::url_encode() %>%
     stringr::str_replace_all("#","%23")
