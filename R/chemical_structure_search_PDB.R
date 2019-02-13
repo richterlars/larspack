@@ -5,7 +5,7 @@
 #' @return a list objects with two elements, element 'pdb' contains a character vector of pdb ids and element 'smiles' contains a vector of smiles strings of the matched ligands
 #'
 #' @examples
-#' get_pdb_id(smiles = "CC(=O)OC1=CC=CC=C1C(=O)O", tanimoto_treshold = 0.9)
+#' get_pdbFromMol(smiles = "CC(=O)OC1=CC=CC=C1C(=O)O", tanimoto_treshold = 0.9)
 #' $`pdb`
 #' [1] "4EFU" "6EY8" "6EY9"
 #' $smiles
