@@ -20,7 +20,7 @@
 
 get_pdbFromMol <- function(smiles, exactSearch = FALSE, tanimoto_treshold = 0.9){
   smiles <- smiles %>%
-    URLencode() %>%
+    urltools::url_encode() %>%
     stringr::str_replace_all("#","%23")
   
   if (exactSearch) {
