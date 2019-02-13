@@ -24,7 +24,8 @@ Imports:
   stringr,
   modelr,
   reshape2,
-  purrr
+  purrr,
+  urltools
 RoxygenNote: 6.0.1
 Suggests: 
     knitr,
